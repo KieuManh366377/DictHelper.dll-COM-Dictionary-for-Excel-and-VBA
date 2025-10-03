@@ -36,7 +36,7 @@ DictHelper được xây dựng trên nền tảng **Delphi Runtime Library (RTL
 4. **Exists(key)** – Kiểm tra xem key có tồn tại trong dictionary hay không.  
 5. **Count** – Trả về tổng số phần tử hiện có trong dictionary.  
 6. **Item(key)** – Truy xuất hoặc gán giá trị trực tiếp bằng cú pháp `dict(key) = value`.  
-7. **_NewEnum** – Hỗ trợ `For Each` trong VBA để duyệt qua tất cả các key.  
+7.  – Hỗ trợ `For Each` trong VBA để duyệt qua tất cả các key.  
 
 ---
 

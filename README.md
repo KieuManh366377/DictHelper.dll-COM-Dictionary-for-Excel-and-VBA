@@ -62,6 +62,53 @@ Sub DemoDictHelper()
     Next
 End Sub
 ```
+## 🔄 So sánh DictHelper.dll với Scripting.Dictionary
+
+**DictHelper.dll** được thiết kế mô phỏng theo đối tượng `Scripting.Dictionary` của Microsoft, nhằm mang lại trải nghiệm tương tự trong môi trường VBA, Excel và VBScript. Người dùng có thể sử dụng DictHelper với cùng cú pháp, phương thức và thuộc tính như Scripting.Dictionary.
+
+### ✅ Điểm tương đồng
+
+| Tính năng | Scripting.Dictionary | DictHelper.Dictionary |
+|----------|----------------------|------------------------|
+| Thêm phần tử | `Add key, value` | `Add key, value` |
+| Truy xuất giá trị | `dict(key)` hoặc `Item(key)` | `dict(key)` hoặc `Item(key)` |
+| Kiểm tra key | `Exists(key)` | `Exists(key)` |
+| Xóa phần tử | `Remove(key)` | `Remove(key)` |
+| Đếm phần tử | `Count` | `Count` |
+| Duyệt key | `For Each key In dict` | `For Each key In dict` |
+
+➡️ **Cú pháp giống nhau 100%**, giúp người dùng chuyển đổi dễ dàng mà không cần viết lại code.
+
+---
+
+### 📌 Điểm khác biệt tiềm năng
+
+- **DictHelper** được viết bằng C++ Builder và kế thừa từ `System.Generics.Collections.TDictionary` của Delphi, nên có thể xử lý kiểu dữ liệu `Variant` tốt hơn trong môi trường COM.
+- Bạn có thể mở rộng DictHelper trong tương lai để hỗ trợ thêm tính năng như lưu file, lọc nâng cao, hoặc tích hợp với các hệ thống khác.
+
+---
+
+### 🧪 Ví dụ chuyển đổi
+
+**Từ Scripting.Dictionary:**
+
+```vb
+Set dict = CreateObject("Scripting.Dictionary")
+dict.Add "Name", "Kieu"
+MsgBox dict("Name")
+```
+
+**Sang DictHelper.Dictionary:**
+
+```vb
+Set dict = CreateObject("DictHelper.Dictionary")
+dict.Add "Name", "Kieu"
+MsgBox dict("Name")
+```
+
+➡️ Không cần thay đổi cú pháp, chỉ thay đổi tên COM ProgID.
+
+---
 
 ---
 

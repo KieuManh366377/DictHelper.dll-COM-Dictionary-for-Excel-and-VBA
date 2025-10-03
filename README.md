@@ -84,7 +84,6 @@ End Sub
 ### 📌 Điểm khác biệt tiềm năng
 
 - **DictHelper** được viết bằng C++ Builder và kế thừa từ `System.Generics.Collections.TDictionary` của Delphi, nên có thể xử lý kiểu dữ liệu `Variant` tốt hơn trong môi trường COM.
-- Bạn có thể mở rộng DictHelper trong tương lai để hỗ trợ thêm tính năng như lưu file, lọc nâng cao, hoặc tích hợp với các hệ thống khác.
 
 ---
 

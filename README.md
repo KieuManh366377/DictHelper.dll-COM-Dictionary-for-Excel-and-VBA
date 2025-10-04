@@ -81,12 +81,6 @@ End Sub
 
 ---
 
-### 📌 Điểm khác biệt tiềm năng
-
-- **DictHelper** được viết bằng C++ Builder và kế thừa từ `System.Generics.Collections.TDictionary` của Delphi, nên có thể xử lý kiểu dữ liệu `Variant` tốt hơn trong môi trường COM.
-
----
-
 ### 🧪 Ví dụ chuyển đổi
 
 **Từ Scripting.Dictionary:**
@@ -108,6 +102,11 @@ MsgBox dict("Name")
 ➡️ Không cần thay đổi cú pháp, chỉ thay đổi tên COM ProgID.
 
 ---
+---
+
+### 📌 Điểm khác biệt tiềm năng
+
+- **DictHelper** được viết bằng C++ Builder và kế thừa từ `System.Generics.Collections.TDictionary` của Delphi, nên có thể xử lý kiểu dữ liệu `Variant` tốt hơn trong môi trường COM.
 
 ---
 

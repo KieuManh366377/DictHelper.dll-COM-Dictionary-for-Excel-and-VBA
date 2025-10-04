@@ -102,7 +102,7 @@ MsgBox dict("Name")
 ➡️ Không cần thay đổi cú pháp, chỉ thay đổi tên COM ProgID.
 
 ---
----
+
 
 ### 📌 Điểm khác biệt tiềm năng
 

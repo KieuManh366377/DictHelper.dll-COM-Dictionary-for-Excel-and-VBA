@@ -62,6 +62,7 @@ Sub DemoDictHelper()
     Next
 End Sub
 ```
+---
 ## 🔄 So sánh DictHelper.dll với Scripting.Dictionary
 
 **DictHelper.dll** được thiết kế mô phỏng theo đối tượng `Scripting.Dictionary` của Microsoft, nhằm mang lại trải nghiệm tương tự trong môi trường VBA, Excel và VBScript. Người dùng có thể sử dụng DictHelper với cùng cú pháp, phương thức và thuộc tính như Scripting.Dictionary.
